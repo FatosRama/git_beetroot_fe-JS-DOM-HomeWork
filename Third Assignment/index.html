@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width:300px;
+        margin:0 auto;
+        
+    }
+    .traffic-light{
+        width:300px;
+        height:500px;
+        background: gray;
+        border-radius: 5px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+    .light__red, .light__yellow, .light__green{
+        width:150px;
+        height:150px;
+        border-radius:50%;
+    }
+    #light__red{
+        background: #3F0A0A;
+    }
+    #light__yellow{
+        background:#3F2F0A;
+    }
+    #light__green{
+        background: #0A3F1A;
+    }
+    
+</style>
+<body>
+    <div class="traffic-light">
+        <div class="light__red" id="light__red"></div>
+        <div class="light__yellow" id="light__yellow"></div>
+        <div class="light__green" id="light__green"></div>
+    </div>
+    <button id="activate-light">Turn on Traffic Light</button>
+    <script src="app.js"></script>
+</body>
+</html>
