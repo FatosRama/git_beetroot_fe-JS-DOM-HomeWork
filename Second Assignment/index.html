@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+    
+    #main-modal{
+        display: none;
+        position: fixed;
+        width:700px;
+        height:300px;
+        padding: 20px;
+        top:37%;
+        left:30%;
+        border:1px solid black;
+    }
+</style>
+<body>
+    <button id="open-modal">Open the Modal</button>
+    <div id="main-modal">
+        <div class="modal-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ab?</p>
+            <button id="close-modal">Close Modal</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
